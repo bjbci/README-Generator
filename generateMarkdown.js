@@ -46,4 +46,4 @@ ${data.contributors}
 
 
 
-module.exports=generateMarkdown
+module.exports = {generateMarkdown}
