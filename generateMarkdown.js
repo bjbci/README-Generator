@@ -2,9 +2,31 @@
 // TODO: Create a function to generate markdown for README
 // function generateMarkdown(data) {
 //   return `# ${data.title}
-
-function generateMarkdown(data){
-    return `# ${data.title}
+function renderLicenseBadge(license) {
+    const licensePicked=license
+    let licenseBadge =""
+  console.log(licensePicked)
+    if(licensePicked==="Apache"){
+      licenseBadge="![license](https://img.shields.io/badge/License-Apache_2.0-blue.svg) (https://opensource.org/licenses/Apache-2.0)" 
+      return licenseBadge                                 
+    }
+    if(licensePicked==="Mit"){
+      licenseBadge="![license](https://img.shields.io/badge/License-MIT-yellow.svg) (https://opensource.org/licenses/MIT)" 
+      return licenseBadge                                 
+    }
+    if(licensePicked==="Boost"){
+      licenseBadge="![license](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg) (https://boost.org/LICENSE_1_0.txt)" 
+      return licenseBadge                                 
+    }
+    if(licensePicked==="Bsd 3-clause"){
+      licenseBadge="![license](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg) (https://opensource.org/licenses/BSD-3-Clause)" 
+      return licenseBadge                                 
+    }
+    
+  }
+  
+function generateMarkdown(data) {
+  return `# ${data.projectName}
 
 
 ## Table Of Contents
@@ -14,36 +36,38 @@ function generateMarkdown(data){
 *[learn](#learn)
 *[difference](#difference)
 *[License](#license)
+
 *[Install ](#install )
 *[Use](#use)
 *[Contributors](#contributors )
 *[Github](#Github)
 *[email](#email)
 
-##Why
+## Why
 ${data.why}
-##What For
+## What For
 ${data.whatFor}
-##What does it solve
+## What does it solve
 ${data.solve}
-##What did I learn
+## What did I learn
 ${data.learn}
-##How is it different
+## How is it different
 ${data.difference}
-##how do you use it
+## how do you use it
 ${data.use}
-##How do you install it
+## How do you install it
 ${data.instal}
-##License
+## License
+${renderLicenseBadge(data.license)}
 ${data.license}
-##Contributors
+## Contributors
 ${data.contributors}
-##Github
-[${data.Github}](https://github.com/${sata.github})
-##Email
-[${data.email}](emailme@aol.com)`
+## Github
+[${data.Github}](https://github.com/${data.github})
+## Email
+[${data.email}](emailme@aol.com)`;
 }
 
 
-
-module.exports = {generateMarkdown}
+export default generateMarkdown
+//module.exports = {generateMarkdown}

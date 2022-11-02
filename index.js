@@ -2,7 +2,7 @@
 
 import fs from "fs";
 import inquirer from "inquirer";
-// import { generateMarkdown } from  "./generateMarkdown.js"
+ import  generateMarkdown  from  "./generateMarkdown.js"
 // const generateMarkdown=require('./generateMarkdown')
 
 // TODO: Create an array of questions for user input
@@ -11,7 +11,8 @@ import inquirer from "inquirer";
 const questions = [{
     type: 'input',
     message: 'What is the name of this project?',
-    name: 'projectName'
+    name: 'projectName',
+   // message: 'What is the name of this project?'
   },
   {
     type: "input",
@@ -91,46 +92,46 @@ const questions = [{
 //       license
 //        })=>{
   // ---------------------------------------------------------------------
-function generateMarkdown(data) {
-  return `# ${data.projectName}
+// function generateMarkdown(data) {
+//   return `# ${data.projectName}
 
 
-## Table Of Contents
-*[Why](#why)
-*[whatFor](#whatFor)
-*[solve](#solve)
-*[learn](#learn)
-*[difference](#difference)
-*[License](#license)
-*[Install ](#install )
-*[Use](#use)
-*[Contributors](#contributors )
-*[Github](#Github)
-*[email](#email)
+// ## Table Of Contents
+// *[Why](#why)
+// *[whatFor](#whatFor)
+// *[solve](#solve)
+// *[learn](#learn)
+// *[difference](#difference)
+// *[License](#license)
+// *[Install ](#install )
+// *[Use](#use)
+// *[Contributors](#contributors )
+// *[Github](#Github)
+// *[email](#email)
 
-## Why
-${data.why}
-## What For
-${data.whatFor}
-## What does it solve
-${data.solve}
-## What did I learn
-${data.learn}
-## How is it different
-${data.difference}
-## how do you use it
-${data.use}
-## How do you install it
-${data.instal}
-## License
-${data.license}
-## Contributors
-${data.contributors}
-## Github
-[${data.Github}](https://github.com/${data.github})
-## Email
-[${data.email}](emailme@aol.com)`;
-}
+// ## Why
+// ${data.why}
+// ## What For
+// ${data.whatFor}
+// ## What does it solve
+// ${data.solve}
+// ## What did I learn
+// ${data.learn}
+// ## How is it different
+// ${data.difference}
+// ## how do you use it
+// ${data.use}
+// ## How do you install it
+// ${data.instal}
+// ## License
+// ${data.license}
+// ## Contributors
+// ${data.contributors}
+// ## Github
+// [${data.Github}](https://github.com/${data.github})
+// ## Email
+// [${data.email}](emailme@aol.com)`;
+// }
 // ----------------------------------------------------------------------------
 // TODO: Create a function to write README file
 //function writeToFile(fileName, data) {}
@@ -150,15 +151,15 @@ function writeToFile(fileName, data) {
 
 function init() {
   inquirer.prompt(questions)
-  .then(function(userInput) {
-    console.log(userInput);
+  .then((userInput) => {
+    console.log("generate file");
     writeToFile("README.md", generateMarkdown(userInput));
   });
 }
 
 // Function call to initialize app
 //init();
-init();
+//init();
 
 //////////////////////////////////////////////
 
@@ -220,5 +221,5 @@ if (licensePicked==="none"){
   
 }
 }
-
-module.exports = generateMarkdown;
+init();
+//module.exports = generateMarkdown;
