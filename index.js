@@ -2,7 +2,8 @@
 
 import fs from "fs"
 import inquirer from "inquirer"
-
+import generateMarkdown from  "./generateMarkdown.js"
+//const generateMarkdown=require('./generateMarkdown')
 
 // TODO: Create an array of questions for user input
 //const questions = [];
@@ -93,60 +94,27 @@ const questions=[
 
 // TODO: Create a function to write README file
 //function writeToFile(fileName, data) {}
-function writeToFile(input){
-  var readMeText =` #${input.projectName}
 
-##Table Of Contents
-*[Why](#why)
-*[whatFor](#whatFor)
-*[solve](#solve)
-*[learn](#learn)
-*[difference](#difference)
-*[License](#license)
-*[Install ](#install )
-*[Use](#use)
-*[Contributors](#contributors )
-*[Github](#Github)
-*[email](#email)
-
-##Why
-${data.why}
-##What For
-${data.whatFor}
-##What does it solve
-${data.solve}
-##What did I learn
-${data.learn}
-##How is it different
-${data.difference}
-##how do you use it
-${data.use}
-##How do you install it
-${data.instal}
-##License
-${data.license}
-##Contributors
-${data.contributors}
-##Github
-${data.Github}`
-
-  // TODO: Create a function to write README file
-  fs.writeFile("./readme.md", readMeText, error=>{
-  
-  if (error){
-    console.log(error)
-return
-  } 
+function writeToFile(fileNmae,data){
+  fs.writeFile(fileName,data, (err)=>{ 
+    if(err){
+      return console.log(err)
+    }
+    console.log('The ReadMe has been saved')
+    })
  
-  })
-}
+  }
+
+
 
 // TODO: Create a function to initialize app
 //function init() {}
+
 function init() {
   inquirer.prompt(questions)
-  .then((answers)=>{
-    writeToFile(answers)
+  .then(function(userInput){
+    console.log(userInput)
+    writeToFile("README.md",generateMarkdown(userInput))
   })
 }
 
@@ -183,23 +151,13 @@ or=""
 /function renderLicenseSection(license) {}
 or=""
 
-// TODO: Create a function to generate markdown for README
-// function generateMarkdown(data) {
-//   return `# ${data.title}
 
-// `;
-// }
 
-// function generateMarkdown(data) {
-//      return `# ${data.title}
-//   `;
-   
-//    }
 
-// TODO: Create a function to generate markdown for README
- function generateMarkdown(data) {
-   return `# ${data.title}
 
- module.exports = generateMarkdown;
+
+ 
+
+ module.exports = generateMarkdown.md;
 
  
