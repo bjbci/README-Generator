@@ -1,4 +1,4 @@
-# hrt
+# README Generator
 
 
 ## Table Of Contents
@@ -16,25 +16,25 @@
 *[email](#email)
 
 ## Why
-nrte
+It is a homework assignment
 ## What For
-ntr
+Decreasing the amount of time it takes a user to create a README file
 ## What does it solve
-nrt
+missing sections of a README
 ## What did I learn
-nrt
+exporting modules
 ## How is it different
-ntr
+I made it
 ## how do you use it
-ntr
+you run it in node JS using the terminal
 ## How do you install it
 undefined
 ## License
-![license](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg) (https://boost.org/LICENSE_1_0.txt)
-Boost
+![license](https://img.shields.io/badge/License-MIT-yellow.svg) (https://opensource.org/licenses/MIT)
+Mit
 ## Contributors
 undefined
 ## Github
-[ntr](https://github.com/undefined)
+[www.githubhhhh](https://github.com/undefined)
 ## Email
-[ntr](emailme@aol.com)
+[hhhh](emailme@aol.com)
