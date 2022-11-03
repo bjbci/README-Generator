@@ -12,7 +12,7 @@ const questions = [{
     type: 'input',
     message: 'What is the name of this project?',
     name: 'projectName',
-   // message: 'What is the name of this project?'
+   
   },
   {
     type: "input",
@@ -157,9 +157,8 @@ function init() {
   });
 }
 
-// Function call to initialize app
-//init();
-//init();
+
+
 
 //////////////////////////////////////////////
 
@@ -221,5 +220,7 @@ if (licensePicked==="none"){
   
 }
 }
+// Function call to initialize app
 init();
+
 //module.exports = generateMarkdown;

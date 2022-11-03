@@ -31,7 +31,7 @@ function generateMarkdown(data) {
 
 ## Table Of Contents
 *[Why](#why)
-*[whatFor](#whatFor)
+*[WhatFor](#whatFor)
 *[solve](#solve)
 *[learn](#learn)
 *[difference](#difference)
@@ -56,14 +56,14 @@ ${data.difference}
 ## how do you use it
 ${data.use}
 ## How do you install it
-${data.instal}
+${data.install}
 ## License
 ${renderLicenseBadge(data.license)}
 ${data.license}
 ## Contributors
 ${data.contributors}
 ## Github
-[${data.Github}](https://github.com/${data.github})
+[${data.Github}](https://github.com/${data.Github})
 ## Email
 [${data.email}](emailme@aol.com)`;
 }

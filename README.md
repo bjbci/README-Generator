@@ -3,7 +3,7 @@
 
 ## Table Of Contents
 *[Why](#why)
-*[whatFor](#whatFor)
+*[WhatFor](#whatFor)
 *[solve](#solve)
 *[learn](#learn)
 *[difference](#difference)
@@ -16,25 +16,25 @@
 *[email](#email)
 
 ## Why
-I made this app as a homework assignment
+I made this app for a homework assignment
 ## What For
-This app is for making a concise README file quickly
+This ap is for creating complete README quickly
 ## What does it solve
-It slves the problem of making an incomplete README
+This app solves the problem of missing or skipping information that should be included in a README
 ## What did I learn
-Ilearned about exporting and importing modules
+While making this app i learned aboout inquirer and exporting modules
 ## How is it different
-I made this one
+This app is different because I made it
 ## how do you use it
-This ap is run on the terminal using nodejs
+you run this app in the terminal using node js
 ## How do you install it
-undefined
+you run it in the terminal
 ## License
 ![license](https://img.shields.io/badge/License-MIT-yellow.svg) (https://opensource.org/licenses/MIT)
 Mit
 ## Contributors
 undefined
 ## Github
-[github.com/bjbci/README-Generator](https://github.com/undefined)
+[github.com/bjbci/README-Generator](https://github.com/github.com/bjbci/README-Generator)
 ## Email
 [bajebi@mac.com](emailme@aol.com)
