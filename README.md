@@ -16,17 +16,17 @@
 *[email](#email)
 
 ## Why
-It is a homework assignment
+I made this app as a homework assignment
 ## What For
-Decreasing the amount of time it takes a user to create a README file
+This app is for making a concise README file quickly
 ## What does it solve
-missing sections of a README
+It slves the problem of making an incomplete README
 ## What did I learn
-exporting modules
+Ilearned about exporting and importing modules
 ## How is it different
-I made it
+I made this one
 ## how do you use it
-you run it in node JS using the terminal
+This ap is run on the terminal using nodejs
 ## How do you install it
 undefined
 ## License
@@ -35,6 +35,6 @@ Mit
 ## Contributors
 undefined
 ## Github
-[www.githubhhhh](https://github.com/undefined)
+[github.com/bjbci/README-Generator](https://github.com/undefined)
 ## Email
-[hhhh](emailme@aol.com)
+[bajebi@mac.com](emailme@aol.com)
