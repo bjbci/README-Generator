@@ -65,9 +65,10 @@ ${data.contributors}
 ## Github
 [${data.Github}](https://github.com/${data.Github})
 ## Email
-[${data.email}](emailme@aol.com)`;
+[${data.email}](emailme@aol.com)
+## Screencastify Link:
+[${data.screencastify}]`;
 }
-
 
 export default generateMarkdown
 //module.exports = {generateMarkdown}
