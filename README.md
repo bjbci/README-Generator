@@ -1,4 +1,4 @@
-# README Generator
+# do whatcha like
 
 
 ## Table Of Contents
@@ -16,25 +16,25 @@
 *[email](#email)
 
 ## Why
-I made this app for a homework assignment
+had to
 ## What For
-This ap is for creating complete README quickly
+readme generation
 ## What does it solve
-This app solves the problem of missing or skipping information that should be included in a README
+many
 ## What did I learn
-While making this app i learned aboout inquirer and exporting modules
+node.js
 ## How is it different
-This app is different because I made it
+i made it
 ## how do you use it
-you run this app in the terminal using node js
+use it in the terminal
 ## How do you install it
-you run it in the terminal
+run in termina;l
 ## License
 ![license](https://img.shields.io/badge/License-MIT-yellow.svg) (https://opensource.org/licenses/MIT)
 Mit
 ## Contributors
 undefined
 ## Github
-[github.com/bjbci/README-Generator](https://github.com/github.com/bjbci/README-Generator)
+[github.com/bjbci](https://github.com/github.com/bjbci)
 ## Email
 [bajebi@mac.com](emailme@aol.com)
